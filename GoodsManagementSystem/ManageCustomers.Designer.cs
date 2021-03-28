@@ -29,9 +29,9 @@ namespace GoodsManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,8 +43,20 @@ namespace GoodsManagementSystem
             this.Delete = new Guna.UI2.WinForms.Guna2Button();
             this.Edit = new Guna.UI2.WinForms.Guna2Button();
             this.Add = new Guna.UI2.WinForms.Guna2Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersGV)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -155,30 +167,30 @@ namespace GoodsManagementSystem
             // 
             // CustomersGV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.CustomersGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.CustomersGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.CustomersGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CustomersGV.BackgroundColor = System.Drawing.Color.White;
             this.CustomersGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CustomersGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.CustomersGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CustomersGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CustomersGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.CustomersGV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CustomersGV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CustomersGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.CustomersGV.EnableHeadersVisualStyles = false;
             this.CustomersGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.CustomersGV.Location = new System.Drawing.Point(249, 147);
@@ -272,11 +284,122 @@ namespace GoodsManagementSystem
             this.Add.Text = "Add";
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(41, 507);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(192, 112);
+            this.panel2.TabIndex = 16;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label3.Location = new System.Drawing.Point(3, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 23);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Orders count";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label4.Location = new System.Drawing.Point(25, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(143, 49);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Count";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.SpringGreen;
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Location = new System.Drawing.Point(295, 507);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(192, 112);
+            this.panel3.TabIndex = 18;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label5.Location = new System.Drawing.Point(25, 35);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(176, 49);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Amount";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label6.Location = new System.Drawing.Point(3, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(157, 23);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Orders amount";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Firebrick;
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Location = new System.Drawing.Point(612, 507);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(192, 112);
+            this.panel4.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label7.Location = new System.Drawing.Point(25, 35);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(119, 49);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Date";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label8.Location = new System.Drawing.Point(3, 12);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(160, 23);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Last order date";
+            // 
             // ManageCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 524);
+            this.ClientSize = new System.Drawing.Size(861, 631);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.Home);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.Edit);
@@ -292,6 +415,12 @@ namespace GoodsManagementSystem
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersGV)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -309,5 +438,14 @@ namespace GoodsManagementSystem
         private Guna.UI2.WinForms.Guna2Button Delete;
         private Guna.UI2.WinForms.Guna2Button Edit;
         private Guna.UI2.WinForms.Guna2Button Add;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
