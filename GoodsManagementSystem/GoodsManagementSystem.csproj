@@ -73,6 +73,12 @@
     <Compile Include="ManageCategories.Designer.cs">
       <DependentUpon>ManageCategories.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageOrders.Designer.cs">
+      <DependentUpon>ManageOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageProducts.cs">
       <SubType>Form</SubType>
     </Compile>

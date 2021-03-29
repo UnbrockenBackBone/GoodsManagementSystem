@@ -29,9 +29,9 @@ namespace GoodsManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,6 +46,9 @@ namespace GoodsManagementSystem
             this.Edit = new Guna.UI2.WinForms.Guna2Button();
             this.Add = new Guna.UI2.WinForms.Guna2Button();
             this.ProductsGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.SearchCombo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.Search = new Guna.UI2.WinForms.Guna2Button();
+            this.Refresh = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsGV)).BeginInit();
             this.SuspendLayout();
@@ -248,6 +251,7 @@ namespace GoodsManagementSystem
             this.Delete.Size = new System.Drawing.Size(95, 30);
             this.Delete.TabIndex = 19;
             this.Delete.Text = "Delete";
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Edit
             // 
@@ -262,6 +266,7 @@ namespace GoodsManagementSystem
             this.Edit.Size = new System.Drawing.Size(95, 30);
             this.Edit.TabIndex = 18;
             this.Edit.Text = "Edit";
+            this.Edit.Click += new System.EventHandler(this.Edit_Click);
             // 
             // Add
             // 
@@ -280,39 +285,39 @@ namespace GoodsManagementSystem
             // 
             // ProductsGV
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.ProductsGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.ProductsGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.ProductsGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProductsGV.BackgroundColor = System.Drawing.Color.White;
             this.ProductsGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ProductsGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ProductsGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ProductsGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ProductsGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.ProductsGV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ProductsGV.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ProductsGV.DefaultCellStyle = dataGridViewCellStyle6;
             this.ProductsGV.EnableHeadersVisualStyles = false;
             this.ProductsGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ProductsGV.Location = new System.Drawing.Point(249, 145);
+            this.ProductsGV.Location = new System.Drawing.Point(249, 199);
             this.ProductsGV.Name = "ProductsGV";
             this.ProductsGV.RowHeadersVisible = false;
             this.ProductsGV.RowHeadersWidth = 51;
             this.ProductsGV.RowTemplate.Height = 30;
             this.ProductsGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ProductsGV.Size = new System.Drawing.Size(820, 449);
+            this.ProductsGV.Size = new System.Drawing.Size(820, 395);
             this.ProductsGV.TabIndex = 21;
             this.ProductsGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.ProductsGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -336,12 +341,65 @@ namespace GoodsManagementSystem
             this.ProductsGV.ThemeStyle.RowsStyle.Height = 30;
             this.ProductsGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ProductsGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ProductsGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsGV_CellContentClick);
+            // 
+            // SearchCombo
+            // 
+            this.SearchCombo.BackColor = System.Drawing.Color.Transparent;
+            this.SearchCombo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.SearchCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SearchCombo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SearchCombo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SearchCombo.FocusedState.Parent = this.SearchCombo;
+            this.SearchCombo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.SearchCombo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.SearchCombo.HoverState.Parent = this.SearchCombo;
+            this.SearchCombo.ItemHeight = 30;
+            this.SearchCombo.ItemsAppearance.Parent = this.SearchCombo;
+            this.SearchCombo.Location = new System.Drawing.Point(558, 145);
+            this.SearchCombo.Name = "SearchCombo";
+            this.SearchCombo.ShadowDecoration.Parent = this.SearchCombo;
+            this.SearchCombo.Size = new System.Drawing.Size(179, 36);
+            this.SearchCombo.TabIndex = 22;
+            // 
+            // Search
+            // 
+            this.Search.CheckedState.Parent = this.Search;
+            this.Search.CustomImages.Parent = this.Search;
+            this.Search.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Search.ForeColor = System.Drawing.Color.White;
+            this.Search.HoverState.Parent = this.Search;
+            this.Search.Location = new System.Drawing.Point(743, 145);
+            this.Search.Name = "Search";
+            this.Search.ShadowDecoration.Parent = this.Search;
+            this.Search.Size = new System.Drawing.Size(95, 36);
+            this.Search.TabIndex = 23;
+            this.Search.Text = "Search";
+            this.Search.Click += new System.EventHandler(this.Search_Click);
+            // 
+            // Refresh
+            // 
+            this.Refresh.CheckedState.Parent = this.Refresh;
+            this.Refresh.CustomImages.Parent = this.Refresh;
+            this.Refresh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Refresh.ForeColor = System.Drawing.Color.White;
+            this.Refresh.HoverState.Parent = this.Refresh;
+            this.Refresh.Location = new System.Drawing.Point(844, 145);
+            this.Refresh.Name = "Refresh";
+            this.Refresh.ShadowDecoration.Parent = this.Refresh;
+            this.Refresh.Size = new System.Drawing.Size(95, 36);
+            this.Refresh.TabIndex = 24;
+            this.Refresh.Text = "Refresh";
+            this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
             // 
             // ManageProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1081, 631);
+            this.Controls.Add(this.Refresh);
+            this.Controls.Add(this.Search);
+            this.Controls.Add(this.SearchCombo);
             this.Controls.Add(this.ProductsGV);
             this.Controls.Add(this.Home);
             this.Controls.Add(this.Delete);
@@ -380,5 +438,8 @@ namespace GoodsManagementSystem
         private Guna.UI2.WinForms.Guna2Button Edit;
         private Guna.UI2.WinForms.Guna2Button Add;
         private Guna.UI2.WinForms.Guna2DataGridView ProductsGV;
+        private Guna.UI2.WinForms.Guna2ComboBox SearchCombo;
+        private Guna.UI2.WinForms.Guna2Button Search;
+        private Guna.UI2.WinForms.Guna2Button Refresh;
     }
 }
