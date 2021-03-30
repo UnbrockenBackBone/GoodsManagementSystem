@@ -178,5 +178,10 @@ namespace GoodsManagementSystem
         {
             Populate();
         }
+
+        private void SearchCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

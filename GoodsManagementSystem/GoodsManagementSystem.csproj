@@ -102,6 +102,9 @@
     <EmbeddedResource Include="ManageCategories.resx">
       <DependentUpon>ManageCategories.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageOrders.resx">
+      <DependentUpon>ManageOrders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageProducts.resx">
       <DependentUpon>ManageProducts.cs</DependentUpon>
     </EmbeddedResource>
