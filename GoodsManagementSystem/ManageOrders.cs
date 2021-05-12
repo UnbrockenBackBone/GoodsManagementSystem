@@ -23,6 +23,7 @@ namespace GoodsManagementSystem
         }
         DataTable table = new DataTable();
         private int num = 0;
+        int sum = 0;
         private int uprice, totprice, qty;
         private string product;
         void Populate()
@@ -83,23 +84,44 @@ namespace GoodsManagementSystem
                 throw;
             }
         }
+        void updateproduct()
+        {
+            connection.Open();
+            int id = Convert.ToInt32(ProductsGV.SelectedRows[0].Cells[0].Value.ToString());
+            int newQty = stock - Convert.ToInt32(QtyTb.Text);
+            string query = "update ProductTbl set ProdQty = " + newQty + " where ProdId=" + id + "";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            Populateproducts();
+        }
         private void ManageOrders_Load(object sender, EventArgs e)
         {
             Populate();
             Populateproducts();
             fillcategory();
+            table.Columns.Add("Num", typeof(int));
+            table.Columns.Add("Product", typeof(string));
+            table.Columns.Add("Quantity", typeof(int));
+            table.Columns.Add("UPrice", typeof(int));
+            table.Columns.Add("TotPrice", typeof(int));
+
+            OrderGv.DataSource = table;
         }
 
         private void CustomersGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             CustomerIdTb.Text = CustomersGV.SelectedRows[0].Cells[0].Value.ToString();
+            CustomerName.Text = ProductsGV.SelectedRows[0].Cells[1].Value.ToString();
         }
 
-        private int flag = 0;
+        int flag = 0;
+        int stock;
         private void ProductsGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             product = ProductsGV.SelectedRows[0].Cells[1].Value.ToString();
             //qty = Convert.ToInt32(QtyTb.Text);
+            stock = Convert.ToInt32(ProductsGV.SelectedRows[0].Cells[2].Value.ToString());
             uprice = Convert.ToInt32(ProductsGV.SelectedRows[0].Cells[3].Value.ToString());
             //totprice = qty * uprice;
             flag = 1;
@@ -111,6 +133,8 @@ namespace GoodsManagementSystem
                 MessageBox.Show("Введіть к-сть");
             else if (flag == 0)
                 MessageBox.Show("Виберіть продукт");
+            else if (Convert.ToInt32(QtyTb.Text) > stock)
+                MessageBox.Show("Немає в наявності");
             else
             {
                 num = num + 1;
@@ -119,6 +143,33 @@ namespace GoodsManagementSystem
                 table.Rows.Add(num, product, qty, uprice, totprice);
                 OrderGv.DataSource = table;
                 flag = 0;
+            }
+            sum = sum + totprice;
+            TotAmount.Text = sum.ToString();
+            updateproduct();
+        }
+
+        private void InsertOrder_Click(object sender, EventArgs e)
+        {
+            if(OrderIdTb.Text =="" || CustomerIdTb.Text == "" || CustomerName.Text == "" || TotAmount.Text == "")
+            {
+                MessageBox.Show("Заповніть правильно поля");
+            }
+            else
+            {
+                try
+                {
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand("insert into OrderTbl values('" + OrderIdTb.Text + "','" + CustomerIdTb.Text + "','" + CustomerName.Text + "','" + OrderDate.Text + "','" + TotAmount.Text + ")", connection);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Замовлення додано успішно");
+                    connection.Close();
+                    //Populate();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                }
             }
         }
 

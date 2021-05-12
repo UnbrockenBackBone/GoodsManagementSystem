@@ -44,13 +44,17 @@ namespace GoodsManagementSystem
             this.CustomersGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.OrderIdTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.CustomerIdTb = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.OrderDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.SearchCombo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ProductsGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.QtyTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.Add = new Guna.UI2.WinForms.Guna2Button();
             this.OrderGv = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CustomerName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TotAmount = new System.Windows.Forms.Label();
+            this.InsertOrder = new Guna.UI2.WinForms.Guna2Button();
+            this.ViewOrder = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsGV)).BeginInit();
@@ -186,6 +190,7 @@ namespace GoodsManagementSystem
             this.CustomerIdTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.CustomerIdTb.DisabledState.Parent = this.CustomerIdTb;
             this.CustomerIdTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CustomerIdTb.Enabled = false;
             this.CustomerIdTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.CustomerIdTb.FocusedState.Parent = this.CustomerIdTb;
             this.CustomerIdTb.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -194,27 +199,27 @@ namespace GoodsManagementSystem
             this.CustomerIdTb.Location = new System.Drawing.Point(12, 480);
             this.CustomerIdTb.Name = "CustomerIdTb";
             this.CustomerIdTb.PasswordChar = '\0';
-            this.CustomerIdTb.PlaceholderText = "CustomerId";
+            this.CustomerIdTb.PlaceholderText = "";
             this.CustomerIdTb.SelectedText = "";
             this.CustomerIdTb.ShadowDecoration.Parent = this.CustomerIdTb;
             this.CustomerIdTb.Size = new System.Drawing.Size(179, 36);
             this.CustomerIdTb.TabIndex = 24;
             // 
-            // guna2DateTimePicker1
+            // OrderDate
             // 
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.RoyalBlue;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(12, 594);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(235, 36);
-            this.guna2DateTimePicker1.TabIndex = 25;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2021, 3, 30, 20, 18, 46, 501);
+            this.OrderDate.CheckedState.Parent = this.OrderDate;
+            this.OrderDate.FillColor = System.Drawing.Color.RoyalBlue;
+            this.OrderDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.OrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.OrderDate.HoverState.Parent = this.OrderDate;
+            this.OrderDate.Location = new System.Drawing.Point(12, 594);
+            this.OrderDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.OrderDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.OrderDate.Name = "OrderDate";
+            this.OrderDate.ShadowDecoration.Parent = this.OrderDate;
+            this.OrderDate.Size = new System.Drawing.Size(235, 36);
+            this.OrderDate.TabIndex = 25;
+            this.OrderDate.Value = new System.DateTime(2021, 3, 30, 20, 18, 46, 501);
             // 
             // SearchCombo
             // 
@@ -394,41 +399,100 @@ namespace GoodsManagementSystem
             this.OrderGv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.OrderGv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2TextBox1
+            // CustomerName
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(12, 540);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "CustomerName";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(179, 36);
-            this.guna2TextBox1.TabIndex = 32;
+            this.CustomerName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CustomerName.DefaultText = "";
+            this.CustomerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.CustomerName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.CustomerName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CustomerName.DisabledState.Parent = this.CustomerName;
+            this.CustomerName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CustomerName.Enabled = false;
+            this.CustomerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CustomerName.FocusedState.Parent = this.CustomerName;
+            this.CustomerName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CustomerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CustomerName.HoverState.Parent = this.CustomerName;
+            this.CustomerName.Location = new System.Drawing.Point(12, 540);
+            this.CustomerName.Name = "CustomerName";
+            this.CustomerName.PasswordChar = '\0';
+            this.CustomerName.PlaceholderText = "";
+            this.CustomerName.SelectedText = "";
+            this.CustomerName.ShadowDecoration.Parent = this.CustomerName;
+            this.CustomerName.Size = new System.Drawing.Size(179, 36);
+            this.CustomerName.TabIndex = 32;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(349, 767);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(175, 37);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "TotAmount";
+            // 
+            // TotAmount
+            // 
+            this.TotAmount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TotAmount.AutoSize = true;
+            this.TotAmount.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TotAmount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TotAmount.Location = new System.Drawing.Point(530, 767);
+            this.TotAmount.Name = "TotAmount";
+            this.TotAmount.Size = new System.Drawing.Size(0, 37);
+            this.TotAmount.TabIndex = 33;
+            // 
+            // InsertOrder
+            // 
+            this.InsertOrder.CheckedState.Parent = this.InsertOrder;
+            this.InsertOrder.CustomImages.Parent = this.InsertOrder;
+            this.InsertOrder.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.InsertOrder.ForeColor = System.Drawing.Color.White;
+            this.InsertOrder.HoverState.Parent = this.InsertOrder;
+            this.InsertOrder.Location = new System.Drawing.Point(12, 682);
+            this.InsertOrder.Name = "InsertOrder";
+            this.InsertOrder.ShadowDecoration.Parent = this.InsertOrder;
+            this.InsertOrder.Size = new System.Drawing.Size(130, 30);
+            this.InsertOrder.TabIndex = 34;
+            this.InsertOrder.Text = "Insert Order";
+            this.InsertOrder.Click += new System.EventHandler(this.InsertOrder_Click);
+            // 
+            // ViewOrder
+            // 
+            this.ViewOrder.CheckedState.Parent = this.ViewOrder;
+            this.ViewOrder.CustomImages.Parent = this.ViewOrder;
+            this.ViewOrder.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.ViewOrder.ForeColor = System.Drawing.Color.White;
+            this.ViewOrder.HoverState.Parent = this.ViewOrder;
+            this.ViewOrder.Location = new System.Drawing.Point(168, 682);
+            this.ViewOrder.Name = "ViewOrder";
+            this.ViewOrder.ShadowDecoration.Parent = this.ViewOrder;
+            this.ViewOrder.Size = new System.Drawing.Size(130, 30);
+            this.ViewOrder.TabIndex = 35;
+            this.ViewOrder.Text = "View Order";
             // 
             // ManageOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1112, 858);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.ViewOrder);
+            this.Controls.Add(this.InsertOrder);
+            this.Controls.Add(this.TotAmount);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.CustomerName);
             this.Controls.Add(this.OrderGv);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.QtyTb);
             this.Controls.Add(this.SearchCombo);
             this.Controls.Add(this.ProductsGV);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.OrderDate);
             this.Controls.Add(this.CustomerIdTb);
             this.Controls.Add(this.OrderIdTb);
             this.Controls.Add(this.CustomersGV);
@@ -442,6 +506,7 @@ namespace GoodsManagementSystem
             ((System.ComponentModel.ISupportInitialize)(this.ProductsGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OrderGv)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -453,12 +518,16 @@ namespace GoodsManagementSystem
         private Guna.UI2.WinForms.Guna2DataGridView CustomersGV;
         private Guna.UI2.WinForms.Guna2TextBox OrderIdTb;
         private Guna.UI2.WinForms.Guna2TextBox CustomerIdTb;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker OrderDate;
         private Guna.UI2.WinForms.Guna2ComboBox SearchCombo;
         private Guna.UI2.WinForms.Guna2DataGridView ProductsGV;
         private Guna.UI2.WinForms.Guna2TextBox QtyTb;
         private Guna.UI2.WinForms.Guna2Button Add;
         private Guna.UI2.WinForms.Guna2DataGridView OrderGv;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox CustomerName;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label TotAmount;
+        private Guna.UI2.WinForms.Guna2Button InsertOrder;
+        private Guna.UI2.WinForms.Guna2Button ViewOrder;
     }
 }
