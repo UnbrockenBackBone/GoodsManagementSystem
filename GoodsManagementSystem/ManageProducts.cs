@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -13,11 +14,12 @@ namespace GoodsManagementSystem
 {
     public partial class ManageProducts : Form
     {
+        SqlConnection connection = new SqlConnection();
         public ManageProducts()
         {
+            connection.ConnectionString = ConfigurationManager.ConnectionStrings["MyDBConnectionString"].ConnectionString;
             InitializeComponent();
         }
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\UnbrockenBackBone\Documents\Inventorydb.mdf;Integrated Security=True;Connect Timeout=30");
         void Populate()
         {
             try
