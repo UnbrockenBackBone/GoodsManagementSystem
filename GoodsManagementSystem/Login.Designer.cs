@@ -32,12 +32,13 @@ namespace GoodsManagementSystem
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ShowPassword = new System.Windows.Forms.CheckBox();
+            this.Add = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.PasswordTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.UnameTb = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Add = new Guna.UI2.WinForms.Guna2Button();
-            this.ShowPassword = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.X = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +46,7 @@ namespace GoodsManagementSystem
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.Controls.Add(this.X);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -59,7 +61,7 @@ namespace GoodsManagementSystem
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(57, 23);
+            this.label2.Location = new System.Drawing.Point(44, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(647, 49);
             this.label2.TabIndex = 1;
@@ -79,6 +81,60 @@ namespace GoodsManagementSystem
             this.panel2.Size = new System.Drawing.Size(434, 337);
             this.panel2.TabIndex = 3;
             // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label3.Location = new System.Drawing.Point(126, 302);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 21);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Очистити";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // ShowPassword
+            // 
+            this.ShowPassword.AutoSize = true;
+            this.ShowPassword.Location = new System.Drawing.Point(279, 302);
+            this.ShowPassword.Name = "ShowPassword";
+            this.ShowPassword.Size = new System.Drawing.Size(144, 21);
+            this.ShowPassword.TabIndex = 8;
+            this.ShowPassword.Text = "Показати пароль";
+            this.ShowPassword.UseVisualStyleBackColor = true;
+            this.ShowPassword.CheckedChanged += new System.EventHandler(this.ShowPassword_CheckedChanged);
+            // 
+            // Add
+            // 
+            this.Add.CheckedState.Parent = this.Add;
+            this.Add.CustomImages.Parent = this.Add;
+            this.Add.FillColor = System.Drawing.Color.MidnightBlue;
+            this.Add.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Add.ForeColor = System.Drawing.Color.White;
+            this.Add.HoverState.Parent = this.Add;
+            this.Add.Location = new System.Drawing.Point(130, 238);
+            this.Add.Name = "Add";
+            this.Add.ShadowDecoration.Parent = this.Add;
+            this.Add.Size = new System.Drawing.Size(179, 39);
+            this.Add.TabIndex = 7;
+            this.Add.Text = "Вхід";
+            this.Add.Click += new System.EventHandler(this.Add_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(162, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 49);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Вхід";
+            // 
             // PasswordTb
             // 
             this.PasswordTb.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -95,12 +151,13 @@ namespace GoodsManagementSystem
             this.PasswordTb.HoverState.Parent = this.PasswordTb;
             this.PasswordTb.Location = new System.Drawing.Point(130, 167);
             this.PasswordTb.Name = "PasswordTb";
-            this.PasswordTb.PasswordChar = '*';
+            this.PasswordTb.PasswordChar = '\0';
             this.PasswordTb.PlaceholderText = "PasswordTb";
             this.PasswordTb.SelectedText = "";
             this.PasswordTb.ShadowDecoration.Parent = this.PasswordTb;
             this.PasswordTb.Size = new System.Drawing.Size(179, 36);
             this.PasswordTb.TabIndex = 5;
+            this.PasswordTb.UseSystemPasswordChar = true;
             // 
             // UnameTb
             // 
@@ -125,59 +182,17 @@ namespace GoodsManagementSystem
             this.UnameTb.Size = new System.Drawing.Size(179, 36);
             this.UnameTb.TabIndex = 4;
             // 
-            // label1
+            // X
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(162, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 49);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Вхід";
-            // 
-            // Add
-            // 
-            this.Add.CheckedState.Parent = this.Add;
-            this.Add.CustomImages.Parent = this.Add;
-            this.Add.FillColor = System.Drawing.Color.MidnightBlue;
-            this.Add.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.Add.ForeColor = System.Drawing.Color.White;
-            this.Add.HoverState.Parent = this.Add;
-            this.Add.Location = new System.Drawing.Point(130, 238);
-            this.Add.Name = "Add";
-            this.Add.ShadowDecoration.Parent = this.Add;
-            this.Add.Size = new System.Drawing.Size(179, 39);
-            this.Add.TabIndex = 7;
-            this.Add.Text = "Додати";
-            this.Add.Click += new System.EventHandler(this.Add_Click);
-            // 
-            // ShowPassword
-            // 
-            this.ShowPassword.AutoSize = true;
-            this.ShowPassword.Location = new System.Drawing.Point(279, 302);
-            this.ShowPassword.Name = "ShowPassword";
-            this.ShowPassword.Size = new System.Drawing.Size(144, 21);
-            this.ShowPassword.TabIndex = 8;
-            this.ShowPassword.Text = "Показати пароль";
-            this.ShowPassword.UseVisualStyleBackColor = true;
-            this.ShowPassword.CheckedChanged += new System.EventHandler(this.ShowPassword_CheckedChanged);
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(126, 302);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 21);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Очистити";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.X.AutoSize = true;
+            this.X.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.X.ForeColor = System.Drawing.Color.Red;
+            this.X.Location = new System.Drawing.Point(703, 0);
+            this.X.Name = "X";
+            this.X.Size = new System.Drawing.Size(31, 29);
+            this.X.TabIndex = 4;
+            this.X.Text = "X";
+            this.X.Click += new System.EventHandler(this.X_Click);
             // 
             // Login
             // 
@@ -208,6 +223,7 @@ namespace GoodsManagementSystem
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox ShowPassword;
         private Guna.UI2.WinForms.Guna2Button Add;
+        private System.Windows.Forms.Label X;
     }
 }
 

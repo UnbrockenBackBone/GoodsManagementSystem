@@ -35,7 +35,7 @@ namespace GoodsManagementSystem
             sda.Fill(dt);
             if(dt.Rows[0][0].ToString() == "1")
             {
-                ManageCustomers cust = new ManageCustomers();
+                Main cust = new Main();
                 cust.Show();
                 this.Hide();
             }
@@ -48,10 +48,15 @@ namespace GoodsManagementSystem
 
         private void ShowPassword_CheckedChanged(object sender, EventArgs e)
         {
-            //if (ShowPassword.Checked == false)
-            //    PasswordTb.isPassword = true;
-            //else
-            //    PasswordTb.isPassword = false;
+            if (ShowPassword.Checked == false)
+                PasswordTb.UseSystemPasswordChar = true;
+            else
+                PasswordTb.UseSystemPasswordChar = false;
+        }
+
+        private void X_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

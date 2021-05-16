@@ -150,7 +150,7 @@ namespace GoodsManagementSystem
                 connection.Open();
                 SqlCommand cmd = new SqlCommand("update ProductTbl set ProdName='" + ProdNameTb.Text + "',ProdQty='" + ProdQtTb.Text + "',ProdPrice='" + ProPriceTb.Text + "',ProdDesc='" + ProdDescTb.Text + "',ProdCat='" + CatCombo.SelectedValue.ToString() + "' where ProdId='" + ProdIdTb.Text + "'", connection);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Користувача оновлено успішно");
+                MessageBox.Show("Товар оновлено успішно");
                 connection.Close();
                 Populate();
             }
