@@ -16,7 +16,7 @@ namespace GoodsManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ViewOrders());
+            Application.Run(new Login());
         }
     }
 }
