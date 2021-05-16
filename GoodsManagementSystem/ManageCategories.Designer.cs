@@ -66,9 +66,9 @@ namespace GoodsManagementSystem
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label2.Location = new System.Drawing.Point(142, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(555, 49);
+            this.label2.Size = new System.Drawing.Size(647, 49);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Goods Managment System";
+            this.label2.Text = "Система управління товарами";
             // 
             // label1
             // 
@@ -79,9 +79,9 @@ namespace GoodsManagementSystem
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Location = new System.Drawing.Point(220, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(417, 49);
+            this.label1.Size = new System.Drawing.Size(495, 49);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Manage Categories";
+            this.label1.Text = "Управління категоріями";
             // 
             // CategoriesName
             // 
@@ -201,7 +201,7 @@ namespace GoodsManagementSystem
             this.Home.ShadowDecoration.Parent = this.Home;
             this.Home.Size = new System.Drawing.Size(95, 30);
             this.Home.TabIndex = 19;
-            this.Home.Text = "Home";
+            this.Home.Text = "Головна";
             // 
             // Delete
             // 
@@ -213,9 +213,9 @@ namespace GoodsManagementSystem
             this.Delete.Location = new System.Drawing.Point(12, 450);
             this.Delete.Name = "Delete";
             this.Delete.ShadowDecoration.Parent = this.Delete;
-            this.Delete.Size = new System.Drawing.Size(95, 30);
+            this.Delete.Size = new System.Drawing.Size(102, 30);
             this.Delete.TabIndex = 18;
-            this.Delete.Text = "Delete";
+            this.Delete.Text = "Видалити";
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Edit
@@ -230,7 +230,7 @@ namespace GoodsManagementSystem
             this.Edit.ShadowDecoration.Parent = this.Edit;
             this.Edit.Size = new System.Drawing.Size(95, 30);
             this.Edit.TabIndex = 17;
-            this.Edit.Text = "Edit";
+            this.Edit.Text = "Змінити";
             this.Edit.Click += new System.EventHandler(this.Edit_Click);
             // 
             // Add
@@ -243,9 +243,9 @@ namespace GoodsManagementSystem
             this.Add.Location = new System.Drawing.Point(12, 402);
             this.Add.Name = "Add";
             this.Add.ShadowDecoration.Parent = this.Add;
-            this.Add.Size = new System.Drawing.Size(95, 30);
+            this.Add.Size = new System.Drawing.Size(102, 30);
             this.Add.TabIndex = 16;
-            this.Add.Text = "Add";
+            this.Add.Text = "Додати";
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // ManageCategories
@@ -262,7 +262,7 @@ namespace GoodsManagementSystem
             this.Controls.Add(this.CategoriesId);
             this.Controls.Add(this.panel1);
             this.Name = "ManageCategories";
-            this.Text = "ManageGoods";
+            this.Text = "Управління категоріями";
             this.Load += new System.EventHandler(this.ManageCategories_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

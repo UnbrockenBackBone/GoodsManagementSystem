@@ -29,9 +29,9 @@ namespace GoodsManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,11 +66,11 @@ namespace GoodsManagementSystem
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(147, 0);
+            this.label2.Location = new System.Drawing.Point(123, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(555, 49);
+            this.label2.Size = new System.Drawing.Size(647, 49);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Goods Managment System";
+            this.label2.Text = "Система управління товарами";
             // 
             // label1
             // 
@@ -79,11 +79,11 @@ namespace GoodsManagementSystem
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(293, 60);
+            this.label1.Location = new System.Drawing.Point(172, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 49);
+            this.label1.Size = new System.Drawing.Size(564, 49);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Manage Users";
+            this.label1.Text = "Управління користувачами";
             // 
             // unameTb
             // 
@@ -187,9 +187,9 @@ namespace GoodsManagementSystem
             this.Add.Location = new System.Drawing.Point(12, 383);
             this.Add.Name = "Add";
             this.Add.ShadowDecoration.Parent = this.Add;
-            this.Add.Size = new System.Drawing.Size(95, 30);
+            this.Add.Size = new System.Drawing.Size(112, 30);
             this.Add.TabIndex = 6;
-            this.Add.Text = "Add";
+            this.Add.Text = "Додати";
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // Edit
@@ -204,7 +204,7 @@ namespace GoodsManagementSystem
             this.Edit.ShadowDecoration.Parent = this.Edit;
             this.Edit.Size = new System.Drawing.Size(95, 30);
             this.Edit.TabIndex = 7;
-            this.Edit.Text = "Edit";
+            this.Edit.Text = "Змінити";
             this.Edit.Click += new System.EventHandler(this.Edit_Click);
             // 
             // Delete
@@ -217,9 +217,9 @@ namespace GoodsManagementSystem
             this.Delete.Location = new System.Drawing.Point(12, 431);
             this.Delete.Name = "Delete";
             this.Delete.ShadowDecoration.Parent = this.Delete;
-            this.Delete.Size = new System.Drawing.Size(95, 30);
+            this.Delete.Size = new System.Drawing.Size(114, 30);
             this.Delete.TabIndex = 8;
-            this.Delete.Text = "Delete";
+            this.Delete.Text = "Видалити";
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Home
@@ -234,34 +234,34 @@ namespace GoodsManagementSystem
             this.Home.ShadowDecoration.Parent = this.Home;
             this.Home.Size = new System.Drawing.Size(95, 30);
             this.Home.TabIndex = 9;
-            this.Home.Text = "Home";
+            this.Home.Text = "Головна";
             // 
             // UsersGV
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.UsersGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.UsersGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.UsersGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.UsersGV.BackgroundColor = System.Drawing.Color.White;
             this.UsersGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UsersGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.UsersGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.UsersGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.UsersGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.UsersGV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.UsersGV.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.UsersGV.DefaultCellStyle = dataGridViewCellStyle9;
             this.UsersGV.EnableHeadersVisualStyles = false;
             this.UsersGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.UsersGV.Location = new System.Drawing.Point(249, 151);
@@ -312,7 +312,7 @@ namespace GoodsManagementSystem
             this.Controls.Add(this.unameTb);
             this.Controls.Add(this.panel1);
             this.Name = "ManageUsers";
-            this.Text = "ManageUsers";
+            this.Text = "Управління користувачами";
             this.Load += new System.EventHandler(this.ManageUsers_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
