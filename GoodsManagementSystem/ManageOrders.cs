@@ -179,6 +179,12 @@ namespace GoodsManagementSystem
             }
         }
 
+        private void ViewOrder_Click(object sender, EventArgs e)
+        {
+            ViewOrders view = new ViewOrders();
+            view.Show();
+        }
+
         private void SearchCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
 

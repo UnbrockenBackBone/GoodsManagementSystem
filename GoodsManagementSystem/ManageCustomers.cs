@@ -82,6 +82,20 @@ namespace GoodsManagementSystem
             CustomerId.Text = CustomersGV.SelectedRows[0].Cells[0].Value.ToString();
             CustomerName.Text = CustomersGV.SelectedRows[0].Cells[1].Value.ToString();
             CustomerPhone.Text = CustomersGV.SelectedRows[0].Cells[2].Value.ToString();
+            connection.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from OrderTbl where CustId = " + CustomerId.Text + "", connection);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            OrderLabel.Text = dt.Rows[0][0].ToString();
+            SqlDataAdapter sda1 = new SqlDataAdapter("select Sum(TotalAmnt) from OrderTbl where CustId = " + CustomerId.Text + "", connection);
+            DataTable dt1 = new DataTable();
+            sda1.Fill(dt1);
+            AmountLabel.Text = dt1.Rows[0][0].ToString();
+            SqlDataAdapter sda2 = new SqlDataAdapter("select Max(OrderDate) from OrderTbl where CustId = " + CustomerId.Text + "", connection);
+            DataTable dt2 = new DataTable();
+            sda2.Fill(dt2);
+            DateLabel.Text = dt2.Rows[0][0].ToString();
+            connection.Close();
         }
 
         private void Edit_Click(object sender, EventArgs e)
