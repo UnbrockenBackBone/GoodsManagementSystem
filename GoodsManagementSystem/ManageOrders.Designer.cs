@@ -29,15 +29,15 @@ namespace GoodsManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,6 +55,7 @@ namespace GoodsManagementSystem
             this.TotAmount = new System.Windows.Forms.Label();
             this.InsertOrder = new Guna.UI2.WinForms.Guna2Button();
             this.ViewOrder = new Guna.UI2.WinForms.Guna2Button();
+            this.Home = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsGV)).BeginInit();
@@ -100,30 +101,30 @@ namespace GoodsManagementSystem
             // 
             // CustomersGV
             // 
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.White;
-            this.CustomersGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.CustomersGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.CustomersGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CustomersGV.BackgroundColor = System.Drawing.Color.White;
             this.CustomersGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CustomersGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.CustomersGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CustomersGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CustomersGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.CustomersGV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CustomersGV.DefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CustomersGV.DefaultCellStyle = dataGridViewCellStyle12;
             this.CustomersGV.EnableHeadersVisualStyles = false;
             this.CustomersGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.CustomersGV.Location = new System.Drawing.Point(12, 179);
@@ -244,30 +245,30 @@ namespace GoodsManagementSystem
             // 
             // ProductsGV
             // 
-            dataGridViewCellStyle49.BackColor = System.Drawing.Color.White;
-            this.ProductsGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.ProductsGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.ProductsGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProductsGV.BackgroundColor = System.Drawing.Color.White;
             this.ProductsGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ProductsGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ProductsGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle50.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle50.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ProductsGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ProductsGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.ProductsGV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle51.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle51.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ProductsGV.DefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ProductsGV.DefaultCellStyle = dataGridViewCellStyle15;
             this.ProductsGV.EnableHeadersVisualStyles = false;
             this.ProductsGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ProductsGV.Location = new System.Drawing.Point(467, 179);
@@ -342,30 +343,30 @@ namespace GoodsManagementSystem
             // 
             // OrderGv
             // 
-            dataGridViewCellStyle52.BackColor = System.Drawing.Color.White;
-            this.OrderGv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle52;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.OrderGv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.OrderGv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.OrderGv.BackgroundColor = System.Drawing.Color.White;
             this.OrderGv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OrderGv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.OrderGv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle53.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle53.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.OrderGv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.OrderGv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.OrderGv.ColumnHeadersHeight = 35;
-            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle54.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle54.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.OrderGv.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.OrderGv.DefaultCellStyle = dataGridViewCellStyle18;
             this.OrderGv.EnableHeadersVisualStyles = false;
             this.OrderGv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.OrderGv.Location = new System.Drawing.Point(348, 480);
@@ -455,7 +456,7 @@ namespace GoodsManagementSystem
             this.InsertOrder.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.InsertOrder.ForeColor = System.Drawing.Color.White;
             this.InsertOrder.HoverState.Parent = this.InsertOrder;
-            this.InsertOrder.Location = new System.Drawing.Point(12, 682);
+            this.InsertOrder.Location = new System.Drawing.Point(12, 667);
             this.InsertOrder.Name = "InsertOrder";
             this.InsertOrder.ShadowDecoration.Parent = this.InsertOrder;
             this.InsertOrder.Size = new System.Drawing.Size(130, 30);
@@ -470,7 +471,7 @@ namespace GoodsManagementSystem
             this.ViewOrder.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.ViewOrder.ForeColor = System.Drawing.Color.White;
             this.ViewOrder.HoverState.Parent = this.ViewOrder;
-            this.ViewOrder.Location = new System.Drawing.Point(192, 682);
+            this.ViewOrder.Location = new System.Drawing.Point(195, 667);
             this.ViewOrder.Name = "ViewOrder";
             this.ViewOrder.ShadowDecoration.Parent = this.ViewOrder;
             this.ViewOrder.Size = new System.Drawing.Size(130, 30);
@@ -478,11 +479,27 @@ namespace GoodsManagementSystem
             this.ViewOrder.Text = "Замовлення";
             this.ViewOrder.Click += new System.EventHandler(this.ViewOrder_Click);
             // 
+            // Home
+            // 
+            this.Home.CheckedState.Parent = this.Home;
+            this.Home.CustomImages.Parent = this.Home;
+            this.Home.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Home.ForeColor = System.Drawing.Color.White;
+            this.Home.HoverState.Parent = this.Home;
+            this.Home.Location = new System.Drawing.Point(119, 726);
+            this.Home.Name = "Home";
+            this.Home.ShadowDecoration.Parent = this.Home;
+            this.Home.Size = new System.Drawing.Size(95, 30);
+            this.Home.TabIndex = 36;
+            this.Home.Text = "Головна";
+            this.Home.Click += new System.EventHandler(this.Home_Click);
+            // 
             // ManageOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1112, 858);
+            this.Controls.Add(this.Home);
             this.Controls.Add(this.ViewOrder);
             this.Controls.Add(this.InsertOrder);
             this.Controls.Add(this.TotAmount);
@@ -530,5 +547,6 @@ namespace GoodsManagementSystem
         private System.Windows.Forms.Label TotAmount;
         private Guna.UI2.WinForms.Guna2Button InsertOrder;
         private Guna.UI2.WinForms.Guna2Button ViewOrder;
+        private Guna.UI2.WinForms.Guna2Button Home;
     }
 }

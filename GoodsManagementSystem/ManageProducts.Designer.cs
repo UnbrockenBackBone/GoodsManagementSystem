@@ -237,6 +237,7 @@ namespace GoodsManagementSystem
             this.Home.Size = new System.Drawing.Size(95, 30);
             this.Home.TabIndex = 20;
             this.Home.Text = "Головна";
+            this.Home.Click += new System.EventHandler(this.Home_Click);
             // 
             // Delete
             // 

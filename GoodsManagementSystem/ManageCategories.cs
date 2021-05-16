@@ -100,5 +100,12 @@ namespace GoodsManagementSystem
         {
             Populate();
         }
+
+        private void Home_Click(object sender, EventArgs e)
+        {
+            Main main = new Main();
+            main.Show();
+            this.Hide();
+        }
     }
 }

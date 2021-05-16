@@ -185,6 +185,13 @@ namespace GoodsManagementSystem
             view.Show();
         }
 
+        private void Home_Click(object sender, EventArgs e)
+        {
+            Main main = new Main();
+            main.Show();
+            this.Hide();
+        }
+
         private void SearchCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
