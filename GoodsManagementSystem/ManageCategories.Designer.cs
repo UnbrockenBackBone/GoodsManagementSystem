@@ -196,10 +196,10 @@ namespace GoodsManagementSystem
             this.Home.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Home.ForeColor = System.Drawing.Color.White;
             this.Home.HoverState.Parent = this.Home;
-            this.Home.Location = new System.Drawing.Point(132, 450);
+            this.Home.Location = new System.Drawing.Point(120, 450);
             this.Home.Name = "Home";
             this.Home.ShadowDecoration.Parent = this.Home;
-            this.Home.Size = new System.Drawing.Size(95, 30);
+            this.Home.Size = new System.Drawing.Size(107, 30);
             this.Home.TabIndex = 19;
             this.Home.Text = "Головна";
             this.Home.Click += new System.EventHandler(this.Home_Click);
@@ -226,10 +226,10 @@ namespace GoodsManagementSystem
             this.Edit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Edit.ForeColor = System.Drawing.Color.White;
             this.Edit.HoverState.Parent = this.Edit;
-            this.Edit.Location = new System.Drawing.Point(130, 402);
+            this.Edit.Location = new System.Drawing.Point(120, 402);
             this.Edit.Name = "Edit";
             this.Edit.ShadowDecoration.Parent = this.Edit;
-            this.Edit.Size = new System.Drawing.Size(95, 30);
+            this.Edit.Size = new System.Drawing.Size(107, 30);
             this.Edit.TabIndex = 17;
             this.Edit.Text = "Змінити";
             this.Edit.Click += new System.EventHandler(this.Edit_Click);

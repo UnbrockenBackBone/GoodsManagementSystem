@@ -29,9 +29,9 @@ namespace GoodsManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -231,10 +231,10 @@ namespace GoodsManagementSystem
             this.Home.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Home.ForeColor = System.Drawing.Color.White;
             this.Home.HoverState.Parent = this.Home;
-            this.Home.Location = new System.Drawing.Point(142, 536);
+            this.Home.Location = new System.Drawing.Point(130, 536);
             this.Home.Name = "Home";
             this.Home.ShadowDecoration.Parent = this.Home;
-            this.Home.Size = new System.Drawing.Size(101, 30);
+            this.Home.Size = new System.Drawing.Size(113, 30);
             this.Home.TabIndex = 20;
             this.Home.Text = "Головна";
             this.Home.Click += new System.EventHandler(this.Home_Click);
@@ -246,7 +246,7 @@ namespace GoodsManagementSystem
             this.Delete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Delete.ForeColor = System.Drawing.Color.White;
             this.Delete.HoverState.Parent = this.Delete;
-            this.Delete.Location = new System.Drawing.Point(24, 536);
+            this.Delete.Location = new System.Drawing.Point(12, 536);
             this.Delete.Name = "Delete";
             this.Delete.ShadowDecoration.Parent = this.Delete;
             this.Delete.Size = new System.Drawing.Size(112, 30);
@@ -261,10 +261,10 @@ namespace GoodsManagementSystem
             this.Edit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Edit.ForeColor = System.Drawing.Color.White;
             this.Edit.HoverState.Parent = this.Edit;
-            this.Edit.Location = new System.Drawing.Point(142, 488);
+            this.Edit.Location = new System.Drawing.Point(130, 488);
             this.Edit.Name = "Edit";
             this.Edit.ShadowDecoration.Parent = this.Edit;
-            this.Edit.Size = new System.Drawing.Size(101, 30);
+            this.Edit.Size = new System.Drawing.Size(113, 30);
             this.Edit.TabIndex = 18;
             this.Edit.Text = "Змінити";
             this.Edit.Click += new System.EventHandler(this.Edit_Click);
@@ -276,7 +276,7 @@ namespace GoodsManagementSystem
             this.Add.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.Add.ForeColor = System.Drawing.Color.White;
             this.Add.HoverState.Parent = this.Add;
-            this.Add.Location = new System.Drawing.Point(24, 488);
+            this.Add.Location = new System.Drawing.Point(12, 488);
             this.Add.Name = "Add";
             this.Add.ShadowDecoration.Parent = this.Add;
             this.Add.Size = new System.Drawing.Size(112, 30);
@@ -286,30 +286,30 @@ namespace GoodsManagementSystem
             // 
             // ProductsGV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.ProductsGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.ProductsGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ProductsGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ProductsGV.BackgroundColor = System.Drawing.Color.White;
             this.ProductsGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ProductsGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ProductsGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ProductsGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ProductsGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.ProductsGV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ProductsGV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ProductsGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.ProductsGV.EnableHeadersVisualStyles = false;
             this.ProductsGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ProductsGV.Location = new System.Drawing.Point(249, 199);
@@ -389,7 +389,7 @@ namespace GoodsManagementSystem
             this.Refresh.Location = new System.Drawing.Point(844, 145);
             this.Refresh.Name = "Refresh";
             this.Refresh.ShadowDecoration.Parent = this.Refresh;
-            this.Refresh.Size = new System.Drawing.Size(110, 36);
+            this.Refresh.Size = new System.Drawing.Size(115, 36);
             this.Refresh.TabIndex = 24;
             this.Refresh.Text = "Обновити";
             this.Refresh.Click += new System.EventHandler(this.Refresh_Click);

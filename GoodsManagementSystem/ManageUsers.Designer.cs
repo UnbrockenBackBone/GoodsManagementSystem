@@ -202,7 +202,7 @@ namespace GoodsManagementSystem
             this.Edit.Location = new System.Drawing.Point(130, 383);
             this.Edit.Name = "Edit";
             this.Edit.ShadowDecoration.Parent = this.Edit;
-            this.Edit.Size = new System.Drawing.Size(95, 30);
+            this.Edit.Size = new System.Drawing.Size(113, 30);
             this.Edit.TabIndex = 7;
             this.Edit.Text = "Змінити";
             this.Edit.Click += new System.EventHandler(this.Edit_Click);
@@ -232,7 +232,7 @@ namespace GoodsManagementSystem
             this.Home.Location = new System.Drawing.Point(132, 431);
             this.Home.Name = "Home";
             this.Home.ShadowDecoration.Parent = this.Home;
-            this.Home.Size = new System.Drawing.Size(95, 30);
+            this.Home.Size = new System.Drawing.Size(111, 30);
             this.Home.TabIndex = 9;
             this.Home.Text = "Головна";
             this.Home.Click += new System.EventHandler(this.Home_Click);
