@@ -210,7 +210,7 @@ namespace GoodsManagementSystem
             this.OrderDate.CheckedState.Parent = this.OrderDate;
             this.OrderDate.FillColor = System.Drawing.Color.RoyalBlue;
             this.OrderDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.OrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.OrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.OrderDate.HoverState.Parent = this.OrderDate;
             this.OrderDate.Location = new System.Drawing.Point(12, 594);
             this.OrderDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);

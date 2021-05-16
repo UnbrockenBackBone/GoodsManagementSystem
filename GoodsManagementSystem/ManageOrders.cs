@@ -86,14 +86,20 @@ namespace GoodsManagementSystem
         }
         void updateproduct()
         {
-            connection.Open();
+            
             int id = Convert.ToInt32(ProductsGV.SelectedRows[0].Cells[0].Value.ToString());
             int newQty = stock - Convert.ToInt32(QtyTb.Text);
-            string query = "update ProductTbl set ProdQty = " + newQty + " where ProdId=" + id + "";
-            SqlCommand cmd = new SqlCommand(query, connection);
-            cmd.ExecuteNonQuery();
-            connection.Close();
-            Populateproducts();
+            if(newQty < 0)
+                MessageBox.Show("Помилка операції");
+            else
+            {
+                connection.Open();
+                string query = "update ProductTbl set ProdQty = " + newQty + " where ProdId=" + id + "";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                Populateproducts();
+            }
         }
         private void ManageOrders_Load(object sender, EventArgs e)
         {
@@ -160,7 +166,7 @@ namespace GoodsManagementSystem
                 try
                 {
                     connection.Open();
-                    SqlCommand cmd = new SqlCommand("insert into OrderTbl values('" + OrderIdTb.Text + "','" + CustomerIdTb.Text + "','" + CustomerName.Text + "','" + OrderDate.Text + "','" + TotAmount.Text + ")", connection);
+                    SqlCommand cmd = new SqlCommand("insert into OrderTbl values(" + OrderIdTb.Text + "," + CustomerIdTb.Text + ",'" + CustomerName.Text + "','" + OrderDate.Text + "'," + TotAmount.Text + ")", connection);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Замовлення додано успішно");
                     connection.Close();
