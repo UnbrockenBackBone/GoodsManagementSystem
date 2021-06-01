@@ -22,35 +22,35 @@ namespace GoodsManagementSystem
             Application.Exit();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void GoodsBox_Click(object sender, EventArgs e)
         {
             ManageProducts prod = new ManageProducts();
             prod.Show();
             this.Hide();
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void UsersBox_Click(object sender, EventArgs e)
         {
             ManageUsers user = new ManageUsers();
             user.Show();
             this.Hide();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void CategoryBox_Click(object sender, EventArgs e)
         {
             ManageCategories cate = new ManageCategories();
             cate.Show();
             this.Hide();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void CustomersBox_Click(object sender, EventArgs e)
         {
             ManageCustomers custo = new ManageCustomers();
             custo.Show();
             this.Hide();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void OrdersBox_Click(object sender, EventArgs e)
         {
             ManageOrders custo = new ManageOrders();
             custo.Show();
@@ -63,5 +63,6 @@ namespace GoodsManagementSystem
             login.Show();
             this.Hide();
         }
+
     }
 }

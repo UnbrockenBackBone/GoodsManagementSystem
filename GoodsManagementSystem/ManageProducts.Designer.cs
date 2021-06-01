@@ -362,7 +362,6 @@ namespace GoodsManagementSystem
             this.SearchCombo.ShadowDecoration.Parent = this.SearchCombo;
             this.SearchCombo.Size = new System.Drawing.Size(179, 36);
             this.SearchCombo.TabIndex = 22;
-            this.SearchCombo.SelectedIndexChanged += new System.EventHandler(this.SearchCombo_SelectedIndexChanged);
             // 
             // Search
             // 

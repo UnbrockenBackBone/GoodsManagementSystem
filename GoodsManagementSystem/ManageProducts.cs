@@ -181,11 +181,6 @@ namespace GoodsManagementSystem
             Populate();
         }
 
-        private void SearchCombo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Home_Click(object sender, EventArgs e)
         {
             Main main = new Main();
